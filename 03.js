@@ -14,9 +14,15 @@ function buscarAmigo(amigos, nombre) {
   //  buscarAmigo(amigos, 'toni') debe devolver { nombre: 'toni', edad: 33 };
 
   // Tu código aca:
-  
+  var obj = { nombre: "", edad: 0 };
+  amigos.forEach((e) => {
+    if (e.nombre == nombre) {
+      obj = e;
+    }
+  });
+  return obj;
 }
 
 // No modifiques nada debajo de esta linea //
 
-module.exports = buscarAmigo
+module.exports = buscarAmigo;

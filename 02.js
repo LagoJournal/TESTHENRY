@@ -12,8 +12,15 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
+  var largest = "";
+  strings.forEach((e) => {
+    if (e.length > largest.length) {
+      largest = e;
+    }
+  });
+  return largest;
 }
 
 // No modifiques nada debajo de esta linea //
 
-module.exports = stringMasLarga
+module.exports = stringMasLarga;
